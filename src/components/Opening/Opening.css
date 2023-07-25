@@ -1,0 +1,90 @@
+.opening-main {
+    display: flex;
+    width:auto;
+    height: 217.5vw;
+    background-image: url('../../img/backgroundOpening.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*gradient images*/
+
+.gradient2 {
+    display: flex;
+    position: fixed;
+    top: 130px;
+    left: 0;
+    width: fit-content;
+    height: 217.5vw;
+}
+
+.gradient1 {
+    position: absolute;
+}
+
+/*containers with the content*/
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    z-index: 1;
+    padding-top: 10%;
+    width: 100%;
+}
+
+#img-phone {
+    z-index: 1;
+    display: flex;
+    background-image: url('../../img/iPhone-mobile.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    align-content: center;
+    height: 344px;
+    width: 188px;
+}
+
+/*txt and btn content*/
+.open-left {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+    z-index: 1;
+}
+
+.txt-title {
+    margin: 0;
+    color: #FFF;
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 35px;
+    padding-bottom: 27px;
+    width: 80%;
+}
+
+#fin-txt{
+    background: linear-gradient(90deg, #845BE9 0%, #4C76E6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+}
+
+#prototype-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vw;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #8B57E9 0%, #4A76E6 100%);
+    border-style: none;
+    color: #FFF;
+    font-size: 100%;
+    font-weight: 600;
+    width: 43%;
+    /* padding: 0 6.7% 0 6.7%; */
+}
+

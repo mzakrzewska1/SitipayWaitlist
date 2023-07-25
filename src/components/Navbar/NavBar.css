@@ -1,0 +1,146 @@
+
+.navBar-main {
+   background-color: rgb(0, 0, 0);
+   color: #FFF;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding-top: 30px;
+   padding-bottom: 30px;
+   position: fixed;
+   width: 100%;
+   z-index: 2;
+   height: 8px;
+}
+
+/*logo*/
+.navBar-main>img {
+    width: 60px;
+    height: 12px;
+    padding-left: 5%;
+}
+
+/*nav ul*/
+.nav-ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style-type: none;
+    margin: 0;
+    padding-right: 5%;
+}
+
+.nav-ul>li,
+.btn-nav {
+    font-size: 16px;
+    font-weight: 510;
+}
+
+
+.li-nav {
+    display: flex;
+    align-items: center;
+}
+
+/* join Waitlist button WITH the gradient*/
+.btn-nav {
+    color: #8075FF;
+    background-color: #0E0A20;
+    font-weight: 600;
+    padding: 15px 15px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    border-style: none;
+    background-clip: content-box;
+}
+
+.btn-nav::before,
+.btn-nav::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    background-color: #0E0A20;
+}
+
+.btn-nav::before {
+    border-image: linear-gradient(135deg, #845BE9, #4F74E7) 1;
+}
+
+.btn-nav::after {
+    border-image: linear-gradient(135deg, #845BE9, #4F74E7) 1;
+}
+
+
+
+
+
+
+
+
+@media (min-width: 768px) {
+    
+    .navBar-main {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+/*logo*/
+.navBar-main > img {
+    width: 122px;
+    height: 24px;
+}
+
+
+/*nav ul*/
+.nav-ul {
+    flex-direction: row;
+    gap: 40px;
+}
+
+
+
+
+/* join Waitlist button WITH the gradient*/
+.btn-nav {
+    color: #8075FF;
+    background-color: #0E0A20;
+    font-weight: 600;
+    padding: 15px 49px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    border-style: none;
+    background-clip: content-box;
+}
+
+.btn-nav::before,
+.btn-nav::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    background-color: #0E0A20;
+}
+
+.btn-nav::before {
+    border-image: linear-gradient(135deg, #845BE9, #4F74E7) 1;
+}
+
+.btn-nav::after {
+    border-image: linear-gradient(135deg, #845BE9, #4F74E7) 1;
+}
+
+}
