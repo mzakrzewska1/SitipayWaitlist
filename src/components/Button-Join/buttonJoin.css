@@ -1,0 +1,19 @@
+.btn-join {
+    border-radius: 10px;
+    background: linear-gradient(90deg, #8B57E9 0%, #4A76E6 100%);
+    width: 221px;
+    height: 80px;
+    color: #FFF;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    border-style: none;
+}
+
+@media (max-width: 1024px) {
+ .btn-join {
+    width: 160px;
+    height: 60px;
+    font-size: 16px;
+ }
+}

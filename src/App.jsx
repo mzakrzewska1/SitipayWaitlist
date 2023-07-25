@@ -3,7 +3,7 @@ import './App.css';
 import NavBar from './components/Navbar/NavBar.jsx';
 import Opening from './components/Opening/Opening';
 import Features from './components/Features/Features';
-// import EmpoweringStudents from './components/EmpoweringStudents.jsx/EmpoweringStudents';
+import EmpoweringStudents from './components/EmpoweringStudents/EmpoweringStudents';
 // import WhySitipay from './components/WhySitipay/WhySitipay';
 // import Testimonials from './components/Testimonials/Testimonials'
 // import Timeline from './components/Timeline/Timeline';
@@ -17,9 +17,10 @@ function App() {
       <NavBar />
       <Opening />
       <Features />
+      <EmpoweringStudents />
       {/* 
       
-      <EmpoweringStudents />
+      
       <WhySitipay />
       <Testimonials />
       <Timeline />
