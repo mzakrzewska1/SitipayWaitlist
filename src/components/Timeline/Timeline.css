@@ -1,0 +1,235 @@
+
+ .main-timeline {
+    background-color: #F3F3F9;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+ }
+
+
+.imgGirl {
+    background-image: url('../../img/TimelineBackground.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 69vw;
+    width: 100%;
+    margin-bottom: -3%;
+    background-position: center;
+}
+
+.content-timeL {
+    display: flex;
+    justify-content: space-between;
+    gap: 10%;
+    background: #1B172D;
+    height: 820px;
+    width: 100%;
+    padding-left: 5%;
+}
+
+/*text on the left*/
+
+.text-next {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 60%;
+    padding-left: 5%;
+    padding-top: 86px;
+}
+
+
+.text-next>p {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+.text-next>h1{
+    background: linear-gradient(90deg, #845BE9 0%, #4C76E6 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 26px;
+    font-weight: 900;
+}
+
+
+
+.text-next>article {
+    color: #FBFBFB;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    width: 90%;
+    text-align: center;
+}
+
+
+#input-join {
+    height: 27px;
+    border-radius: 10px;
+    border: 1px solid #FFF;
+    background-color: transparent;
+    margin-top: 29px;
+    margin-bottom: 15px;
+    width: 90%;
+    padding-left: 5%;
+}
+
+
+/*right side - timeline div*/
+
+
+.timeline {
+    display: flex;
+    position: relative;
+}
+
+/*the timeline img*/
+
+.timeline>img {
+    padding-top: 65px;
+    position: absolute;
+    z-index: 2;
+    height: 413px;
+}
+
+/*div to create the border gradient*/
+
+#open-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    border-radius: 100px;
+    position: absolute;
+    top: 12.5%;
+    left: -15%;
+    background: linear-gradient(135deg, #845BE9, #4F74E7) 0;
+    padding: 0.5vw;
+    width: 81%;
+    height: 43px;
+    
+}
+/*div on the top with the text*/
+
+
+.text-31-07 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width:max-content;
+    height: 43px;
+    background-color: #1B172D;
+    border-radius: 100px;
+    padding: 3% 4vw 3% 4vw;
+    
+}
+
+.text-31-07 > h3, .text-31-07> p, .timeline-dates> h3, .timeline-dates> p{
+    margin: 0;
+    display: flex;
+    padding-left: 1vw;
+    font-size: 14px;
+}
+
+
+/*the other dates on the timeline*/
+.dates-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:135px;
+    padding-left: 2vw;
+    align-self: center;
+    padding-top: 140px;
+}
+
+.timeline-dates {
+display: flex;
+flex-direction: column;
+width: max-content;
+color: #fff
+}
+
+
+@media (min-width: 1000px) {
+
+    .imgGirl {
+        height: 55vw;
+        width: 90%;
+        border-radius: 20px;
+    }
+
+    .content-timeL {
+    justify-content: flex-start;
+    height: 820px;
+    width: 90%;
+    gap:0;
+    padding-left: 0;
+
+    }
+    
+    .text-next {
+        padding-left: 18%;
+        padding-top: 160px;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .text-next>p {
+        text-align: left;
+        font-size: 24px;
+    }
+
+    .text-next>h1 {
+        font-size: 53.207px;
+        font-weight: 700;
+    }
+    
+    .text-next>article {
+        font-size: 18px;
+        line-height: 25px;
+        width: 80%;
+        text-align: start;
+    }
+
+    #form {
+        width: 72%;
+    }
+        #input-join {
+            height: 80px;
+            margin-top: 68px;
+            width: 100%;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+
+    .timeline {
+        width: 5%;
+    }
+    .timeline>img {
+        padding-top: 123px;
+        height: 544px;
+    }
+
+    #open-div {
+       top: 18.5%;
+       left: -50%;
+       padding: 0.5vw;
+       height: 74px;
+       width: 222px;
+    }
+
+    .text-31-07 {
+        height: 74px;
+        padding: 3% 4vw 3% 4vw;
+    }
+}
