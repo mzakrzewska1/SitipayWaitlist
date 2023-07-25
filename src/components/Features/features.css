@@ -1,0 +1,252 @@
+.main-features {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #F3F3F9;
+    width: 100%;
+    background: radial-gradient(ellipse at center, rgba(139, 120, 224, 0.25) 0%, #F3F3F9 100%);
+}
+
+
+.title-div {
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    align-items: center; 
+    padding-top: 100px;   
+    padding-bottom: 80px;
+}
+
+
+
+.title-div >h1, p {
+    margin: 0;
+}
+
+.title-div>p {
+    color: #8B57E9;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.48px;
+    padding-bottom: 11px;
+    
+}
+
+.title-div>h1 {
+    text-align: center;
+    color: #0E0A20;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+.title-div>h1>span{
+    background: linear-gradient(90deg, #8C57EA 0%, #4A76E7 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+
+/* main div learn and invest: */
+.mainLI {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15%;
+    padding-bottom: 26.5%;
+}
+
+/* img divs*/
+
+.teacher-img-div {
+    background-image: url('../../img/female-teacher.jpg');
+}
+
+
+.save-img-div {
+    background-image: url('../../img/piggyBankLady.svg');
+}
+
+.student-img-div {
+    background-image: url('../../img/student-guy.png');
+}
+
+.teacher-img-div, .student-img-div, .save-img-div, .extra-div{
+    display: flex;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    height: 220px;
+    width: 320px;
+    background-position: center;
+    border-radius: 20px;
+}
+
+/*manipulate gradient*/
+.gradient-div {
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    background: linear-gradient(90deg, #8B56E9 23.19%, #4975E6 88.71%);
+    height: 220px;
+    width: 320px;
+    margin-left: 6%;
+    margin-top: 6%;
+}
+
+.extra-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    padding-bottom: 37px;
+}
+
+
+.gradient-div,
+.teacher-img-div,
+.student-img-div,
+.save-img-div {
+    position: absolute;
+}
+
+
+/*right text learn*/
+
+.feature-txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #222A25;
+    font-style: normal;
+}
+
+
+.feature-txt > h2 {
+    font-size: 26px;
+    font-weight: 700;
+    margin: 0;
+    padding-bottom: 22px;
+}
+
+.feature-txt>p {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: normal;
+    width: 90%;
+}
+
+
+
+@media (min-width: 1000px) {
+    .mainLI {
+        flex-direction: row;
+    }
+    .title-div>p {
+            font-size: 24px;
+    }
+
+     .title-div>h1 {
+         text-align: center;
+        font-size: 50px;
+         line-height: 60px; 
+     }
+
+    .title-div {
+         padding-top: 166px;
+         padding-bottom: 186px;
+    }
+
+    .title-div>h1,p {
+    margin: 0;
+    }
+
+    .teacher-img-div, .student-img-div {
+        margin-left: 12%;
+    }
+
+    .teacher-img-div,
+    .student-img-div,
+    .save-img-div,
+    .extra-div {
+        flex: 1;
+        height: 349px;
+        width: 100%;
+         }
+
+    .gradient-div {
+          height: 349px;
+         width: 100%;
+         margin-left: 15%;
+          margin-top: 5%;
+         }
+
+        .extra-div {
+            margin-left: 7.5%;
+            padding-bottom: 0;
+        }
+
+
+       .gradient-div,
+       .teacher-img-div,
+       .student-img-div,
+       .save-img-div {
+           top: 0;
+           left: 0;
+       }
+
+    .main-save {
+    flex-direction: row-reverse;
+    gap: 0;
+    margin-right: 6.5%;
+    }
+
+    .grad-save {
+    margin-right: 0;
+    margin-left: 3%;
+    margin-top: 3%;
+    }
+
+   .feature-txt {
+       flex: 1;
+       padding-right: 5%;
+       align-items: start;
+       width: 20%;
+   }
+
+
+   .feature-txt>h2,
+   .txt-save>h2 {
+       font-size: 50px;
+       font-weight: 600;
+       margin: 0;
+       padding-bottom: 22px;
+   }
+
+   .feature-txt>p,
+   .txt-save>p {
+       font-size: 24px;
+       font-weight: 400;
+       line-height: normal;
+       flex-wrap: wrap;
+       text-align: start;
+   }
+
+   .txt-save {
+       display: flex;
+       flex: 1;
+       flex-direction: column;
+       justify-content: center;
+       color: #222A25;
+       font-style: normal;
+       padding-left: 12%;
+   }
+
+}

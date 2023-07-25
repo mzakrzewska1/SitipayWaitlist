@@ -1,25 +1,11 @@
 .opening-main {
     display: flex;
     width:auto;
-    height: 217.5vw;
-    background-image: url('../../img/backgroundOpening.svg');
+    height: 100%;
+    background-image: url('../../img/backgroundMobile.svg');
     background-size: cover;
     background-repeat: no-repeat;
-}
-
-/*gradient images*/
-
-.gradient2 {
-    display: flex;
-    position: fixed;
-    top: 130px;
-    left: 0;
-    width: fit-content;
-    height: 217.5vw;
-}
-
-.gradient1 {
-    position: absolute;
+    padding-bottom: 15%;
 }
 
 /*containers with the content*/
@@ -28,6 +14,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     justify-content: flex-start;
     z-index: 1;
     padding-top: 10%;
@@ -88,3 +75,56 @@
     /* padding: 0 6.7% 0 6.7%; */
 }
 
+
+@media (min-width: 1000px) {
+
+    .opening-main {
+        height: 58.1vw;
+        background-image: url('../../img/backgroundOpening.svg');
+        padding-bottom: 0;
+        }
+
+    
+        /*containers with the content*/
+    
+        .content { 
+            flex-direction: row-reverse;
+            justify-content: center;
+            padding-top: 11.74%;
+        }
+    
+        .open-left {
+            flex-direction: column;
+            align-items: flex-start;
+            padding-left: 12%;
+        }
+    
+        .txt-title {
+            text-align: start;
+            font-size: 3.5rem;
+            font-weight: 600;
+            line-height: 57.464px;
+            width: auto;
+        }
+    
+        #fin-txt {
+            font-weight: 700;
+        }
+    
+        #prototype-btn {
+            height: 5vw;
+            border-radius: 10px;
+            font-size: 150%;
+            width: max-content;
+            padding: 0 6.7% 0 6.7%;
+        }
+    
+    
+        #img-phone {
+            background-image: url('../../img/iPhone13.png');
+            align-content: flex-end;
+            padding-right: 15%;
+            height: 546px;
+            width: 401px;
+        }
+}

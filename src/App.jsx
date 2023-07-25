@@ -2,7 +2,7 @@
 import './App.css';
 import NavBar from './components/Navbar/NavBar.jsx';
 import Opening from './components/Opening/Opening';
-// import Features from './components/Features/Features';
+import Features from './components/Features/Features';
 // import EmpoweringStudents from './components/EmpoweringStudents.jsx/EmpoweringStudents';
 // import WhySitipay from './components/WhySitipay/WhySitipay';
 // import Testimonials from './components/Testimonials/Testimonials'
@@ -16,8 +16,9 @@ function App() {
     <div className="App">
       <NavBar />
       <Opening />
-      {/* 
       <Features />
+      {/* 
+      
       <EmpoweringStudents />
       <WhySitipay />
       <Testimonials />
