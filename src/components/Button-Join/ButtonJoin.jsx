@@ -3,7 +3,7 @@ import './buttonJoin.css'
 
 const ButtonJoin = () => {
   return (
-      <div>
+      <div className='btn-join-div'>
           <button className='btn-join' type="submit">Join Waitlist</button>
     </div>
   )
