@@ -7,7 +7,7 @@ import EmpoweringStudents from './components/EmpoweringStudents/EmpoweringStuden
 import WhySitipay from './components/WhySitipay/WhySitipay';
 // import Testimonials from './components/Testimonials/Testimonials'
 import Timeline from './components/Timeline/Timeline';
-// import AboutUs from './components/AboutUs/AboutUs';
+import AboutUs from './components/AboutUs/AboutUs';
 // import Footer from './components/Footer/Footer';
 
 
@@ -21,13 +21,14 @@ function App() {
       <WhySitipay />
   
       <Timeline />
+      <AboutUs />
       {/* 
       
       
       
       <Testimonials />
       
-      <AboutUs />
+      
       <Footer /> */}
     </div>
   );
