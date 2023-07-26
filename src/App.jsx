@@ -8,7 +8,7 @@ import WhySitipay from './components/WhySitipay/WhySitipay';
 // import Testimonials from './components/Testimonials/Testimonials'
 import Timeline from './components/Timeline/Timeline';
 import AboutUs from './components/AboutUs/AboutUs';
-// import Footer from './components/Footer/Footer';
+import Footer from './components/Footer/Footer';
 
 
 function App() {
@@ -22,6 +22,7 @@ function App() {
   
       <Timeline />
       <AboutUs />
+      <Footer /> 
       {/* 
       
       
@@ -29,7 +30,7 @@ function App() {
       <Testimonials />
       
       
-      <Footer /> */}
+      */}
     </div>
   );
 }
