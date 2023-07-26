@@ -39,7 +39,7 @@ const Timeline = () => {
                           name="email"
                           type="email"
                           placeholder='Email Address' />
-                      <ButtonJoin  />
+                      <ButtonJoin />
                   </form>
             
               </div>

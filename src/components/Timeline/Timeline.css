@@ -6,7 +6,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   
  }
 
 
@@ -22,12 +21,11 @@
 
 .content-timeL {
     display: flex;
-    justify-content: space-between;
-    gap: 10%;
+    justify-content: flex-start;
+    gap: 5%;
     background: #1B172D;
-    height: 820px;
+    height: 510px;
     width: 100%;
-    padding-left: 5%;
 }
 
 /*text on the left*/
@@ -77,10 +75,11 @@
     border: 1px solid #FFF;
     background-color: transparent;
     margin-top: 29px;
-    margin-bottom: 15px;
+    margin-bottom: 29px;
     width: 90%;
     padding-left: 5%;
 }
+
 
 
 /*right side - timeline div*/
@@ -98,6 +97,7 @@
     position: absolute;
     z-index: 2;
     height: 413px;
+
 }
 
 /*div to create the border gradient*/
@@ -109,11 +109,11 @@
     color: #FFF;
     border-radius: 100px;
     position: absolute;
-    top: 12.5%;
-    left: -15%;
+    top: 20%;
+    left: -12%;
     background: linear-gradient(135deg, #845BE9, #4F74E7) 0;
     padding: 0.5vw;
-    width: 81%;
+    width: 100%;
     height: 43px;
     
 }
@@ -125,8 +125,8 @@
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    width:max-content;
-    height: 43px;
+    width:100%;
+    height: 36px;
     background-color: #1B172D;
     border-radius: 100px;
     padding: 3% 4vw 3% 4vw;
@@ -136,8 +136,8 @@
 .text-31-07 > h3, .text-31-07> p, .timeline-dates> h3, .timeline-dates> p{
     margin: 0;
     display: flex;
-    padding-left: 1vw;
-    font-size: 14px;
+    padding-left: 5vw;
+    font-size: 10px;
 }
 
 
@@ -146,10 +146,10 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap:135px;
+    gap:120px;
     padding-left: 2vw;
     align-self: center;
-    padding-top: 140px;
+    padding-top: 160px;
 }
 
 .timeline-dates {
@@ -202,12 +202,12 @@ color: #fff
     }
 
     #form {
-        width: 72%;
+        width: 80%;
     }
         #input-join {
             height: 80px;
             margin-top: 68px;
-            width: 100%;
+            width: 95%;
             margin-bottom: 15px;
             font-size: 18px;
         }
@@ -221,15 +221,34 @@ color: #fff
     }
 
     #open-div {
-       top: 18.5%;
+       top: 19.5%;
        left: -50%;
-       padding: 0.5vw;
+       padding: 0.3vw;
        height: 74px;
-       width: 222px;
+       width: 343%;
     }
 
     .text-31-07 {
-        height: 74px;
+        height: 65px;
         padding: 3% 4vw 3% 4vw;
     }
+
+    .text-31-07>h3{
+            width: 150%;
+    }
+
+    .text-31-07>h3,
+    .text-31-07>p,
+    .timeline-dates>h3,
+    .timeline-dates>p {
+        padding-left: 0.3vw;
+        font-size: 20px;
+    }
+
+    .dates-div {
+        gap: 135px;
+        padding-left: 2vw;
+        padding-top: 140px;
+    }
+
 }
