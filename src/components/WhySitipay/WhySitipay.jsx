@@ -6,7 +6,7 @@ import dollarIcon from '../../img/currency_exchange.svg'
 
 const WhySitipay = () => {
   return (
-      <div className='main-why'>
+      <div className='main-why' id="whySitipay">
 
           <div className='title-div title-margin'> 
               <p>Why Sitipay</p>

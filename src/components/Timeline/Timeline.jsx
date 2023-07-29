@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './Timeline.css'
 import ButtonJoin from './../Button-Join/ButtonJoin';
 import timeline from '../../img/timeline.svg'
+import { HashLink as Link } from 'react-router-hash-link';
 
 const Timeline = () => {
 
@@ -22,7 +23,7 @@ const Timeline = () => {
 
 
   return (
-      <div className='main-timeline'>
+      <div className='main-timeline' >
           
           <div className='imgGirl'></div>
           <div className='content-timeL'>
@@ -63,7 +64,7 @@ const Timeline = () => {
                       
                       </div>
 
-                  <img src={timeline} alt="timeline" />
+                  <img src={timeline} alt="timeline" id="joinWaitlist"/>
                   
               </div>
           </div>

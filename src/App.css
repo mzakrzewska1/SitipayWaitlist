@@ -11,4 +11,25 @@ body {
     background-color: #FBFBFB;
 }
 
+a:visited {
+    color: #FFF;
+}
+a:link {
+    color: #FBFBFB;
+    background-color: transparent;
+    text-decoration: none;
+}
 
+
+
+a:hover {
+    color: #292653;
+    background-color: transparent;
+    text-decoration:wavy;
+}
+
+a:active {
+    /* color: yellow;
+    background-color: transparent;
+    text-decoration: underline; */
+}

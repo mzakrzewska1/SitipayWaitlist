@@ -1,6 +1,7 @@
 import React from 'react'
 import './EmpoweringStudents.css'
 import ButtonJoin from '../Button-Join/ButtonJoin'
+import { HashLink as Link } from "react-router-hash-link";
 
 const EmpoweringStudents = () => {
   return (
