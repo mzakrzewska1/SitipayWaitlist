@@ -11,7 +11,7 @@ const EmpoweringStudents = () => {
                   <h1>Empowering students for <span>Financial Success</span></h1>
                   <p>We understand that financial knowledge is crucial for student success in today's world. That's why we've created a platform that goes beyond basic finance apps.
                   </p>
-                  <ButtonJoin className="btn-media" />
+                  <Link to="#joinWaitlist"><div> <ButtonJoin className="btn-media" /></div> </Link>
               </div>
               <div id="div-img">
                   <div className="emp-img" alt="studentsEmpowering"></div>

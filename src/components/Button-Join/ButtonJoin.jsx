@@ -5,7 +5,7 @@ import { HashLink as Link } from 'react-router-hash-link'
 const ButtonJoin = () => {
   return (
       <div className='btn-join-div' >
-          <Link to="#joinWaitlist" smooth><button className='btn-join' type="submit">Join Waitlist</button></Link>
+          <button className='btn-join' type="submit">Join Waitlist</button>
     </div>
   )
 }

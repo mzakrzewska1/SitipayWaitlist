@@ -39,7 +39,8 @@ const Timeline = () => {
                           id='input-join'
                           name="email"
                           type="email"
-                          placeholder='Email Address' />
+                          placeholder='Email Address'
+                      required/>
                       <ButtonJoin />
                   </form>
             
