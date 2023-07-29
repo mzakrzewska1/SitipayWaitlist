@@ -1,6 +1,7 @@
 
 .navBar-main {
-   background-color: rgb(0, 0, 0);
+   /* background-color: rgb(0, 0, 0); */
+    background-image: linear-gradient(500deg, #845BE9, #4F74E7);
    color: #FFF;
    display: flex;
    align-items: center;
@@ -10,6 +11,7 @@
    position: fixed;
    width: 100%;
    z-index: 2;
+    box-shadow: 0 0.5px 5px 3px #675bef;
 }
 
 /*logo*/
@@ -27,6 +29,7 @@
     list-style-type: none;
     margin: 0;
     padding-right: 5%;
+    display: none;
 }
 
 .nav-ul>li,
@@ -41,53 +44,54 @@
     align-items: center;
 }
 
+.show-nav {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(55deg, #845BE9 10%, #4F74E7 88.71%);
+    height: 40vw;
+    width: 50vw;
+    margin-top: 50px;
+    position:fixed;;
+    z-index: 2;
+    top: 1%;
+    left: 50%;
+    box-shadow: 0 5px 5px -3px #675bef;
+    border-radius: 5px 5px 5px 5px;
+}
+
+/* Hide nav-ul when burgerOpen is false */
+.hide-nav {
+    display: none;
+}
+
+.show-nav>ul {
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+list-style: none;
+padding: 0;
+color: #FFF;
+}
+
+.li-join {
+background: linear-gradient(90deg, #402d72 0%, #182447 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-weight: 900;
+}
+
 /* join Waitlist button WITH the gradient*/
-.btn-nav {
-    color: #8075FF;
-    background-color: #0E0A20;
-    font-weight: 600;
-    padding: 15px 15px;
-    position: relative;
-    border-radius: 10px;
-    overflow: hidden;
-    border-style: none;
-    background-clip: content-box;
-}
-
-.btn-nav::before,
-.btn-nav::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-    border-radius: 10px;
-    border: 2px solid transparent;
-    background-color: #0E0A20;
-}
-
-.btn-nav::before {
-    border-image: linear-gradient(135deg, #845BE9, #4F74E7) 1;
-}
-
-.btn-nav::after {
-    border-image: linear-gradient(135deg, #845BE9, #4F74E7) 1;
-}
 
 
 
 
-
-
-
-
-@media (min-width: 768px) {
+@media (min-width: 1000px) {
     
     .navBar-main {
     padding-top: 40px;
     padding-bottom: 40px;
+    box-shadow: 0 0.5px 10px 5px #675bef;
 }
 
 
@@ -102,44 +106,23 @@
 .nav-ul {
     flex-direction: row;
     gap: 40px;
+    display: flex;
 }
-
 
 
 
 /* join Waitlist button WITH the gradient*/
 .btn-nav {
-    color: #8075FF;
     background-color: #0E0A20;
+    color: #8075FF;
     font-weight: 600;
     padding: 15px 49px;
-    position: relative;
     border-radius: 10px;
-    overflow: hidden;
     border-style: none;
-    background-clip: content-box;
 }
 
-.btn-nav::before,
-.btn-nav::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-    border-radius: 10px;
-    border: 2px solid transparent;
-    background-color: #0E0A20;
-}
-
-.btn-nav::before {
-    border-image: linear-gradient(135deg, #845BE9, #4F74E7) 1;
-}
-
-.btn-nav::after {
-    border-image: linear-gradient(135deg, #845BE9, #4F74E7) 1;
+.show-nav {
+    display: none;
 }
 
 }

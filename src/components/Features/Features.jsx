@@ -3,7 +3,7 @@ import './features.css'
 
 const Features = () => {
   return (
-      <div className='main-features'>
+      <div className='main-features' id="features">
           
           <div className='title-div'>
               <p>Features</p>

@@ -54,7 +54,7 @@ function Carousel() {
        <img src={rating} alt="rating" />
     
        <div className="img-testm">
-        <img alt="img2" />
+        <img alt="" />
         <p>{testimonialsData[1].name} <br /><span>{testimonialsData[1].position}</span></p>
           </div>
       </div>)

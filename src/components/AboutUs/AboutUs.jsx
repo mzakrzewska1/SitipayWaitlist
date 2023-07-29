@@ -19,7 +19,7 @@ const AboutUs = () => {
               </div>
               <div className='img-div gosia-div'>
                   <img src={Gosia} alt="pic Gosia" />
-                   <p>Front-End Developers</p>
+                   <p>Front-End Developer</p>
               </div>
           </div>
     </div>
