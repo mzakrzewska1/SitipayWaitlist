@@ -95,7 +95,7 @@
 .timeline>img {
     padding-top: 65px;
     position: absolute;
-    z-index: 2;
+    z-index: 1;
     height: 413px;
 
 }
