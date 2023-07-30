@@ -3,12 +3,15 @@ import './Timeline.css'
 import ButtonJoin from './../Button-Join/ButtonJoin';
 import timeline from '../../img/timeline.svg'
 import { HashLink as Link } from 'react-router-hash-link';
+import PopUp from '../PopUp/PopUp'
 
 const Timeline = () => {
 
     const [email, setEmail] = useState("")
     
-
+ /*popup state*/
+    const [open, setOpen] = useState(false);
+    
     const handleChange = (e) => {
         setEmail(e.target.value);
     //    setEmail({...email, [e.target.name]:e.target.value})
@@ -17,9 +20,11 @@ const Timeline = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         // logic here sending to server or whatever???
-        alert(`You joined the waitlist with the email:  ${email}`);
+        // alert(`You joined the waitlist with the email:  ${email}`);
+        setOpen(true); 
         setEmail('');
     }
+   
 
 
   return (
@@ -43,7 +48,8 @@ const Timeline = () => {
                       required/>
                       <ButtonJoin />
                   </form>
-            
+                  {open && <PopUp setOpen={setOpen} email={email} />}
+                  
               </div>
               <div className='timeline'>
                   <div id='open-div'>
