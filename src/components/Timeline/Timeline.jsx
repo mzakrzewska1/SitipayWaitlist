@@ -6,7 +6,7 @@ import { HashLink as Link } from 'react-router-hash-link';
 import PopUp from '../PopUp/PopUp'
 
 const Timeline = () => {
-
+/*form state*/
     const [email, setEmail] = useState("")
     
  /*popup state*/
@@ -14,17 +14,19 @@ const Timeline = () => {
     
     const handleChange = (e) => {
         setEmail(e.target.value);
-    //    setEmail({...email, [e.target.name]:e.target.value})
      }
     
     const handleSubmit = (e) => {
         e.preventDefault();
-        // logic here sending to server or whatever???
-        // alert(`You joined the waitlist with the email:  ${email}`);
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
         setOpen(true); 
         setEmail('');
     }
    
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby43flG96C8LJFCJaJkQyP32mj2LA1t6Z_44V8xkDpsj8R9o1YYp8YQslAa-SVJNVfoOA/exec'
+    const form = document.forms['submit-to-google-sheet']
 
 
   return (
@@ -37,7 +39,7 @@ const Timeline = () => {
                   <h1>What’s Next</h1>
                   <article>Join our waitlist today and start your journey to financial freedom. Empower yourself with knowledge, savings, and investment strategies to thrive in the dynamic landscape of personal finance.</article>
 
-                  <form id="form" onSubmit={handleSubmit}>
+                  <form id="form" onSubmit={handleSubmit} name="submit-to-google-sheet">
                       <input
                           onChange={handleChange}
                           value={email}
