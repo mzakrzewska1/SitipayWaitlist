@@ -15,11 +15,17 @@ const AboutUs = () => {
           <div className='photos-div'>
               <div className='img-div subomi-div'>
                   <img src={Subomi} alt="pic Subomi" />
+                  <div className='about-linked-div'>
                   <p>Product Designer</p>
+                      <a href="https://www.linkedin.com/in/thesubomi/" target='_blank'><div className='linkedinIcon'></div></a>
+                    </div>
               </div>
               <div className='img-div gosia-div'>
                   <img src={Gosia} alt="pic Gosia" />
-                   <p>Front-End Developer</p>
+                   <div className='about-linked-div'>
+                  <p>Front-End Developer</p>
+                      <a href="https://www.linkedin.com/in/mzakrzewska1/" target='_blank'><div className='linkedinIcon'></div></a>
+                      </div>
               </div>
           </div>
     </div>

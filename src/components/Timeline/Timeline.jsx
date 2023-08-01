@@ -28,9 +28,6 @@ const Timeline = () => {
         setOpen(true); 
         setEmail('');
     }
-   
-   
-
 
   return (
       <div className='main-timeline' >
@@ -60,7 +57,7 @@ const Timeline = () => {
                   <div id='open-div'>
                       <div className="text-31-07">
                       <h3> Open Waitlist</h3>
-                      <p>31/07</p>
+                      <p>05/08</p>
                       </div>
                   </div>
                   <div className='dates-div'>
