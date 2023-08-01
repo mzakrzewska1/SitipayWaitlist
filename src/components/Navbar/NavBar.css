@@ -11,7 +11,7 @@
    position: fixed;
    width: 100%;
    z-index: 2;
-    box-shadow: 0 0.5px 5px 3px #675bef;
+    box-shadow: 0 0px 2px 2px #675bef;
 }
 
 /*logo*/
@@ -91,7 +91,7 @@ font-weight: 900;
     .navBar-main {
     padding-top: 40px;
     padding-bottom: 40px;
-    box-shadow: 0 0.5px 10px 5px #675bef;
+    box-shadow: 0 0.5px 2px 2px #675bef;
 }
 
 
