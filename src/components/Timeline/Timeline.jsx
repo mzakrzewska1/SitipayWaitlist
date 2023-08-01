@@ -11,6 +11,10 @@ const Timeline = () => {
     
  /*popup state*/
     const [open, setOpen] = useState(false);
+
+// handle the google sheet 
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby43flG96C8LJFCJaJkQyP32mj2LA1t6Z_44V8xkDpsj8R9o1YYp8YQslAa-SVJNVfoOA/exec'
+    const form = document.forms['submit-to-google-sheet']
     
     const handleChange = (e) => {
         setEmail(e.target.value);
@@ -24,10 +28,6 @@ const Timeline = () => {
         setOpen(true); 
         setEmail('');
     }
-   
-    const scriptURL = 'https://script.google.com/macros/s/AKfycby43flG96C8LJFCJaJkQyP32mj2LA1t6Z_44V8xkDpsj8R9o1YYp8YQslAa-SVJNVfoOA/exec'
-    const form = document.forms['submit-to-google-sheet']
-
 
   return (
       <div className='main-timeline' >
@@ -57,7 +57,7 @@ const Timeline = () => {
                   <div id='open-div'>
                       <div className="text-31-07">
                       <h3> Open Waitlist</h3>
-                      <p>31/07</p>
+                      <p>05/08</p>
                       </div>
                   </div>
                   <div className='dates-div'>
