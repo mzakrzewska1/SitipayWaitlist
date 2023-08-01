@@ -11,6 +11,10 @@ const Timeline = () => {
     
  /*popup state*/
     const [open, setOpen] = useState(false);
+
+// handle the google sheet 
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby43flG96C8LJFCJaJkQyP32mj2LA1t6Z_44V8xkDpsj8R9o1YYp8YQslAa-SVJNVfoOA/exec'
+    const form = document.forms['submit-to-google-sheet']
     
     const handleChange = (e) => {
         setEmail(e.target.value);
@@ -25,8 +29,7 @@ const Timeline = () => {
         setEmail('');
     }
    
-    const scriptURL = 'https://script.google.com/macros/s/AKfycby43flG96C8LJFCJaJkQyP32mj2LA1t6Z_44V8xkDpsj8R9o1YYp8YQslAa-SVJNVfoOA/exec'
-    const form = document.forms['submit-to-google-sheet']
+   
 
 
   return (
